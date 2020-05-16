@@ -229,7 +229,7 @@ header {
 
 .team__inner {
   width: 23%;
-  margin-right: 2.6%;
+  margin-right: 2.4%;
 }
 
 .team__inner:last-child {
@@ -503,7 +503,7 @@ footer {
     justify-content: center;
   }
   .features__item {
-    width: 60%;
+    width: 90%;
     justify-content: center;
   }
   .work__item {
