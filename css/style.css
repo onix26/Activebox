@@ -549,6 +549,11 @@ footer {
   body {
     font-size: 10px;
   }
+  .team__inner {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
   .clients__text--suptext {
     font-size: 1.75em;
   }
