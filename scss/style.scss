@@ -1,0 +1,59 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family:  Raleway;
+	font-size: 16px;
+}
+
+.container{
+	max-width: 1170px;
+	margin: 0 auto;
+}
+@import "header";
+@import "features";
+@import "works";
+@import "teams";
+@import "clients";
+
+.download{
+	width: 60%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 6.25em 0;
+	color: #2d3033;
+
+	&--text{
+		font-size: 1.75em;
+		line-height: 21px;
+		font-weight: 300;
+		padding-bottom: 1em;
+	}
+	&--subtext{
+		font-size: 0.8125em;
+		font-weight: 700;
+		line-height: 21px;
+		text-transform: uppercase;
+		padding-bottom: 2.5em;
+	}
+	&--btn{
+		width: 280px;
+		background-color: #e84545;
+		border: none;
+		padding: 1.125em 5.1875em;
+		font-size: 0.8125em;
+		text-transform: uppercase;
+		font-weight: 400;
+		color:#fff;
+	}
+}
+
+@import "footer";
+@import "breakpoints";

@@ -1,0 +1,44 @@
+.clients{
+	width: 100%;
+	height: auto;
+
+	&__slide{
+		width: inherit;
+		display: flex;
+		flex-flow: row wrap;
+		&--img{
+			width: 50%;
+			& img{
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+	}
+	&__des{
+		width: 50%;
+		background-color: #53354a;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	&__text{
+		width: 60%;
+		margin-left: 5em;
+		&--suptext{
+			color: #fff;
+			font-family: Cardo;
+			font-size: 2.25em;
+			line-height: 42px;
+		}
+		&--subtitle{
+			color: #ffffff;
+			font-family: Raleway;
+			font-size: 0.8125em;
+			font-weight: 700;
+			line-height: 21px;
+			text-transform: uppercase;
+			padding-top: 1.875em;
+		}
+	}
+}
