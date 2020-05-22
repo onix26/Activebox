@@ -1,6 +1,11 @@
+$(function(){
+
+	$(".mobile-menu-js").on("click", function(){
+		$(".menu__item").slideToggle();
+	});
 
 
-var typed = new Typed('.element', {
-  strings: ["Your Favorite One Page Multi Purpose Template", "Second sentence."],
-  typeSpeed: 30
+
+
+
 });
