@@ -1,3 +1,11 @@
+@media(max-width: 920px) {
+	body{
+		font-style: 14px;
+	}
+}
+
+
+
 @media(max-width: 768px){
 
 	body{
@@ -10,15 +18,23 @@
 	}
 	.logo{
 		width: 100%;
-		align-items: center;
+		align-items: left;
 		justify-content: center;
+		margin: 2em 0;
 	}
 	.menu{
 		width: 100%;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		&__item{
+			display: none;
+		}
 		
+	}
+	.mobile-menu{
+		display: block;
+
 	}
 	
 	.features__row{
@@ -26,7 +42,7 @@
 	}
 
 	.features__item{
-		width: 60%;
+		width: 90%;
 		justify-content: center; 
 	}
 
@@ -74,6 +90,28 @@
 	.about{
 		width: 100%;
 		margin-bottom: 2.5em;
+	}
+
+}
+
+@media (max-width: 320px){
+	body{
+		font-size: 10px;
+	}
+
+	.mobile-menu{
+		display: block;
+		right: 30px;
+
+	}
+	
+	.team__inner{
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	.clients__text--suptext{
+		font-size: 1.75em;
 	}
 
 }
