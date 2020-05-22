@@ -26,6 +26,7 @@ header {
   height: 100%;
   display: flex;
   align-items: center;
+  padding-top: 2.5em;
 }
 
 .logo {
@@ -54,6 +55,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: relative;
 }
 
 .menu__item {
@@ -117,6 +119,24 @@ header {
   background-color: #e84545;
   border: none;
   align-self: center;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  right: 29px;
+  top: -50px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  background-color: transparent;
+  outline: none;
+}
+
+.mobile-menu i {
+  color: #fff;
 }
 
 .features {
@@ -306,6 +326,7 @@ header {
 
 .clients__slide--img {
   width: 50%;
+  height: auto;
 }
 
 .clients__slide--img img {
@@ -480,6 +501,12 @@ footer {
   margin: 1.375em;
 }
 
+@media (max-width: 920px) {
+  body {
+    font-style: 14px;
+  }
+}
+
 @media (max-width: 768px) {
   body {
     font-size: 12px;
@@ -489,7 +516,7 @@ footer {
   }
   .logo {
     width: 100%;
-    align-items: center;
+    align-items: left;
     justify-content: center;
     margin: 2em 0;
   }
@@ -498,6 +525,12 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .menu__item {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
   }
   .features__row {
     justify-content: center;
@@ -548,6 +581,10 @@ footer {
 @media (max-width: 320px) {
   body {
     font-size: 10px;
+  }
+  .mobile-menu {
+    display: block;
+    right: 30px;
   }
   .team__inner {
     width: 90%;
